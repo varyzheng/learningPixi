@@ -1,6 +1,21 @@
 Learning Pixi
 =============
 
+环境信息
+------------
+备注：pixi的资源加载不支持浏览器中的file协议访问，需要使用http协议，因此需要启动一个本地的服务器来访问所有例子。  所有以来的资源和脚本已经添加，只需按照下边命令运行即可。
+#### 下面启动一个本地服务器
+
+
+安装依赖包(仅第一次需要)：`npm i`
+
+启动项目：`npm start`
+
+停止项目：`Ctrl + C`
+
+之后可以打开浏览器，`http://127.0.0.1:8080` 或者 `http://localhost:8080`均可，或者命令行提示输入ip+端口也可以，我的是`http://192.168.1.4:8080`。examples文件夹中可以查看各个例子
+
+------------
 A step-by-step introduction to making games and interactive media with
 the [Pixi rendering engine](https://github.com/pixijs/pixi.js). **[Updated for Pixi v5.3.10](https://github.com/pixijs/pixi.js/releases/tag/v5.3.10)**. [Chinese version here: Pixi官方教程中文版](https://github.com/Zainking/learningPixi). If you like this
 tutorial, [you'll love the book, which contains 80% more content!](http://www.springer.com/us/book/9781484210956).
@@ -993,7 +1008,7 @@ objects as sub-images.
 
 ![An example tileset](/examples/images/screenshots/09.png)
 
-The entire tileset is 192 by 192 pixels. Each image is in its own 32 by 32
+The entire tileset is 384 by 384 pixels. Each image is in its own 64 by 64
 pixel grid cell. Storing and accessing all your game graphics on a
 tileset is a very
 processor and memory efficient way to work with graphics, and Pixi is
